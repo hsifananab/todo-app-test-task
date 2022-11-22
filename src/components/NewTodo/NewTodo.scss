@@ -1,0 +1,62 @@
+.NewTodo {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+
+  -webkit-box-shadow: 0px 4px 8px -1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 4px 8px -1px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 4px 8px -1px rgba(34, 60, 80, 0.2);
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input {
+      width: 100%;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      border: none;
+      font-family: inherit;
+
+      &.title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      &.date {
+        color: rgb(156 163 175 / 1);
+
+        &:focus {
+          color: rgb(39 40 42 / 1);
+        }
+      }
+    }
+
+    button {
+      height: 50px;
+      width: 50%;
+      border-radius: 12px;
+      border: 1px solid rgb(39 40 42 / 1);
+
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      color: rgb(39 40 42 / 1);
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      text-transform: uppercase;
+      background-color: transparent;
+
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+
+      &:hover,
+      &:focus {
+        background-color: rgb(39 40 42 / 1);
+        color: #fff;
+      }
+    }
+  }
+}

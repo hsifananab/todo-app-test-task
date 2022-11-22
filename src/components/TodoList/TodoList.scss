@@ -1,0 +1,67 @@
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__dateContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: inherit;
+  }
+}
+
+.TodoItem {
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+
+  -webkit-box-shadow: 0px 4px 8px -1px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 4px 8px -1px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 4px 8px -1px rgba(34, 60, 80, 0.2);
+
+  input {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border: none;
+    font-family: inherit;
+
+    &[type='checkbox'] {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.title {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      width: calc(100% - 30px);
+      padding: 0.5rem 0;
+    }
+
+    &.desc {
+      color: #aaaaaa;
+    }
+  }
+  .delete {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    cursor: pointer;
+  }
+}

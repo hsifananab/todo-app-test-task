@@ -1,0 +1,25 @@
+.App {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .container {
+    max-width: 640px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 6rem 1rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: inherit;
+  }
+}
