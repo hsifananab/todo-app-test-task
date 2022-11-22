@@ -36,6 +36,7 @@
     outline-offset: 2px;
     border: none;
     font-family: inherit;
+    height: auto;
 
     &[type='checkbox'] {
       position: absolute;
@@ -53,6 +54,8 @@
 
     &.desc {
       color: #aaaaaa;
+      width: 100%;
+      height: 30px;
     }
   }
   .delete {
